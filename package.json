@@ -1,0 +1,23 @@
+{
+  "name": "node_scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node server.js --use-strict",
+    "watch": "NODE_ENV=development nodemon --ignore 'sites/' --use_strict server.js",
+    "dev": "NODE_ENV=development nodemon --ignore 'sites/' --inspect -e js,json server.js --exec 'node'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chalk": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.2",
+    "mocha": "^4.0.1",
+    "morgan": "^1.9.0"
+  }
+}
